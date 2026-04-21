@@ -11,4 +11,5 @@ git checkout "branch name" to switch branch
 git checkout -b Taduturi -- switch and create a new branch at a time
 git branch -d filename -- to delete a branch
 git branch -m Taduturi -- to change the existing branch name
-
+git commit -m "file data" filename
+git config --global user.email "chinna@gmail.com"
