@@ -1,0 +1,14 @@
+git commit --amend --no-edit -- if we missed a file to add the recent commit e.g. : if we have 3 files called file1 file2 file3, missed file3  
+git rm --cached "filename" -- to unstaged the files from staged file in git
+git commit --amend --author "chinna<chinna@email.com>"  -- to change the recent commit author details
+git reset --hard HEAD~1 -- to remove the recent commit from repo deleted everything include file data
+git reset --soft HEAD~1 -- to remove the recent commit from repo but the files data remains same
+git update-ref -d HEAD  -- to delete the all commits (if we use reset to delete the all commits we have one commit for sure) so instead that this command will delete all.
+git revert "commit id" -- to delete the data in the specific commit data, it will delete and have a new commit id 
+git branch -- to view the branches
+git branch "id/name" to create a new branch
+git checkout "branch name" to switch branch
+git checkout -b Taduturi -- switch and create a new branch at a time
+git branch -d filename -- to delete a branch
+git branch -m Taduturi -- to change the existing branch name
+
