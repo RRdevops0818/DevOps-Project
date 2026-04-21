@@ -1,0 +1,12 @@
+Java installation --> yum install java-25-amazon-corretto -y
+
+Go to Jenkins.io -- downloads --select Red hat, copy the first command
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/rpm-stable/jenkins.repo
+
+installation of Jenkins --  yum install Jenkins -y
+
+Jenkins default port number: 8080
+
+Jenkins default path : /var/lib/Jenkins -- pipeline code is saved here under workspace
+
