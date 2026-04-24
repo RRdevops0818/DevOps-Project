@@ -23,9 +23,27 @@ public class FoodService {
             System.out.println("Menu: " + r.getMenu());
         }
     }
+    <packaging>war</packaging>
 
     public void placeOrder(String item, String restaurantName) {
         Order order = new Order(item, restaurantName);
         order.confirmOrder();
     }
 }
+<build>
+    <plugins>
+        <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+        </plugin>
+
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <source>17</source>
+                <target>17</target>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
